@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Cars Survey</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Vintage Cars Survey</h2>
+        <form>
+            <div class="question">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="question">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="question">
+                <label>Which era of vintage cars do you admire the most?</label><br>
+                <select name="era" required>
+                    <option value="1920s">1920s</option>
+                    <option value="1930s">1930s</option>
+                    <option value="1940s">1940s</option>
+                    <option value="1950s">1950s</option>
+                    <option value="1960s">1960s</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>What is your favorite vintage car brand?</label><br>
+                <input type="text" name="brand" required>
+            </div>
+            <div class="question">
+                <label>Would you consider owning a vintage car?</label><br>
+                <input type="radio" id="yes" name="own" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="own" value="no">
+                <label for="no">No</label>
+            </div>
+            <div class="question">
+                <label>Which vintage car feature do you admire the most?</label><br>
+                <input type="checkbox" id="design" name="feature" value="design">
+                <label for="design">Classic Design</label><br>
+                <input type="checkbox" id="engine" name="feature" value="engine">
+                <label for="engine">Powerful Engine</label><br>
+                <input type="checkbox" id="luxury" name="feature" value="luxury">
+                <label for="luxury">Luxury Interiors</label><br>
+                <input type="checkbox" id="history" name="feature" value="history">
+                <label for="history">Rich History</label>
+            </div>
+            <div class="question">
+                <label>Have you ever attended a vintage car show?</label><br>
+                <input type="radio" id="attended-yes" name="attended" value="yes" required>
+                <label for="attended-yes">Yes</label>
+                <input type="radio" id="attended-no" name="attended" value="no">
+                <label for="attended-no">No</label>
+            </div>
+            <div class="question">
+                <label>Which vintage car would you like to own?</label><br>
+                <textarea name="dream-car" rows="3" placeholder="Your dream vintage car..."></textarea>
+            </div>
+            <div class="question">
+                <label>Additional Comments:</label><br>
+                <textarea name="comments" rows="4" placeholder="Your thoughts..."></textarea>
+            </div>
+            <button type="End" class="submit-btn">Submit</button>
+            <button type="End" class="reset-btn">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
